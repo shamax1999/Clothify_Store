@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.OrderReportsController">
+   <children>
+      <Pane layoutX="12.0" prefHeight="666.0" prefWidth="990.0" style="-fx-background-color: #2d3436;" stylesheets="">
+         <children>
+            <Pane layoutX="179.0" layoutY="366.0" prefHeight="295.0" prefWidth="799.0" style="-fx-background-color: #2c3e50;" styleClass="pane" stylesheets="@../CSS/1.css">
+               <children>
+                  <Label layoutX="15.0" prefHeight="40.0" prefWidth="166.0" text="Cart" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <TableView id="tbl" fx:id="cartTbl" layoutX="14.0" layoutY="39.0" prefHeight="242.0" prefWidth="374.0" stylesheets="@../CSS/1.css">
+                     <columns>
+                        <TableColumn id="colId" fx:id="colCartId" prefWidth="60.00000190734863" text="Item Id" />
+                        <TableColumn id="colEmail" fx:id="colCartPrice" prefWidth="73.5999755859375" text="Price" />
+                        <TableColumn id="colName" fx:id="colCartSize" prefWidth="52.0" text="Size" />
+                        <TableColumn id="colName" fx:id="colCartQty" prefWidth="87.2000732421875" text="Quantity" />
+                        <TableColumn id="colName" fx:id="colCartTotal" prefWidth="87.2000732421875" text="Total" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="cartViewImage" fitHeight="139.0" fitWidth="166.0" layoutX="513.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="414.0" layoutY="160.0" text="Item Id" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="512.0" layoutY="160.0" text="Item Name" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="414.0" layoutY="223.0" text="Price" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="541.0" layoutY="223.0" text="Quntity " textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="668.0" layoutY="223.0" text="Size" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtItemId" editable="false" focusColor="WHITE" layoutX="412.0" layoutY="171.0" prefHeight="40.0" prefWidth="90.0" styleClass="text-field" stylesheets="@../CSS/1.css" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtItemName" editable="false" focusColor="WHITE" layoutX="512.0" layoutY="171.0" prefHeight="40.0" prefWidth="266.0" styleClass="text-field" stylesheets="@../CSS/1.css" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtItemPrice" editable="false" focusColor="WHITE" layoutX="413.0" layoutY="234.0" prefHeight="40.0" prefWidth="90.0" styleClass="text-field" stylesheets="@../CSS/1.css" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtItemQty" editable="false" focusColor="WHITE" layoutX="542.0" layoutY="234.0" prefHeight="40.0" prefWidth="90.0" styleClass="text-field" stylesheets="@../CSS/1.css" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtItemSize" editable="false" focusColor="WHITE" layoutX="669.0" layoutY="234.0" prefHeight="40.0" prefWidth="90.0" styleClass="text-field" stylesheets="@../CSS/1.css" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </Pane>
+            <Pane layoutX="582.0" layoutY="71.0" prefHeight="287.0" prefWidth="396.0" style="-fx-background-color: #2c3e50;" styleClass="pane" stylesheets="@../CSS/1.css">
+               <children>
+                  <Label fx:id="lblDateAndTime" layoutX="15.0" prefHeight="40.0" prefWidth="359.0" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrderId" layoutX="15.0" layoutY="40.0" prefHeight="40.0" prefWidth="181.0" text="OrderID" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="85.0" text="Customer Email" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEmpId" layoutX="204.0" layoutY="40.0" prefHeight="40.0" prefWidth="181.0" text="EmpID" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtEmail" editable="false" focusColor="WHITE" layoutX="18.0" layoutY="97.0" prefHeight="40.0" prefWidth="359.0" styleClass="text-field" stylesheets="@../CSS/1.css" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label fx:id="lblItemCount" layoutX="26.0" layoutY="158.0" prefHeight="40.0" prefWidth="300.0" text="Item Count :-" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSubTotal" layoutX="26.0" layoutY="198.0" prefHeight="40.0" prefWidth="300.0" text="Sub Total :-" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="115.0" layoutY="245.0" onAction="#btnDeleteOrderOnAction" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: #e74c3c;" text="Delete Order" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="179.0" layoutY="71.0" prefHeight="287.0" prefWidth="396.0" style="-fx-background-color: #2c3e50;" styleClass="pane" stylesheets="@../CSS/1.css">
+               <children>
+                  <Label layoutX="15.0" prefHeight="40.0" prefWidth="166.0" styleClass="label-title" stylesheets="@../CSS/1.css" text="Orders" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <TableView id="tbl" fx:id="ordersTbl" layoutX="14.0" layoutY="38.0" prefHeight="225.0" prefWidth="367.0">
+                     <columns>
+                        <TableColumn id="colId" fx:id="colOrderId" prefWidth="60.00000190734863" text="Id" />
+                        <TableColumn id="colName" fx:id="colOrderDateAndTime" prefWidth="122.39996337890625" text="Date and Time" />
+                        <TableColumn id="colEmail" fx:id="colOrderEmpId" prefWidth="60.00007629394531" text="EmpId" />
+                        <TableColumn id="colName" fx:id="colOrderCusEmail" prefWidth="115.20001220703125" text="Cus. Email" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane layoutX="-41.0" prefHeight="667.0" prefWidth="214.0" style="-fx-background-color: black;" styleClass="pane" stylesheets="@../CSS/1.css">
+               <children>
+                  <JFXButton layoutX="39.0" layoutY="307.0" onAction="#ItemPageOnAction" prefHeight="42.0" prefWidth="159.0" style="-fx-background-color: #7f8c8d;" text="Item" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="39.0" layoutY="357.0" onAction="#SupplierPageOnAction" prefHeight="42.0" prefWidth="159.0" style="-fx-background-color: #7f8c8d;" text="Supplier" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="39.0" layoutY="207.0" onAction="#AdminMainPageOnAction" prefHeight="42.0" prefWidth="159.0" style="-fx-background-color: #7f8c8d;" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="39.0" layoutY="257.0" onAction="#EmployeePageOnAction" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #7f8c8d;" text="Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="39.0" layoutY="409.0" onAction="#OrderReportsPageOnAction" prefHeight="42.0" prefWidth="159.0" style="-fx-background-color: #7f8c8d;" text="Oders &amp; Reports" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="210.0" fitWidth="219.0" layoutX="14.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="110.0" layoutY="473.0" onAction="#btnLogoutOnAction" style="-fx-background-color: #d63031;" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Label layoutX="193.0" layoutY="8.0" text="Order Management" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="42.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="686.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="319.0">
+               <image>
+                  <Image url="@../image/mainBG.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="332.0" layoutY="11.0" prefHeight="382.0" prefWidth="340.0" style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="101.0" prefHeight="58.0" prefWidth="165.0" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="126.0" prefHeight="40.0" prefWidth="64.0" text="Email" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="256.0" prefHeight="40.0" prefWidth="112.0" text="Password" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="67.0" prefHeight="40.0" prefWidth="64.0" text="Role" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtEmail" focusColor="WHITE" layoutX="134.0" layoutY="119.0" prefHeight="30.0" prefWidth="186.0" styleClass="text-field" stylesheets="@../CSS/1.css" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="roleList" focusColor="BLACK" layoutX="134.0" layoutY="68.0" prefHeight="25.0" prefWidth="186.0" promptText="  Select Role" style="-fx-background-color: white;" stylesheets="@../CSS/1.css" unFocusColor="#0a0000" />
+                  <JFXTextField fx:id="txtOTP" focusColor="WHITE" layoutX="134.0" layoutY="177.0" prefHeight="30.0" prefWidth="186.0" styleClass="text-field" stylesheets="@../CSS/1.css" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton layoutX="14.0" layoutY="182.0" onAction="#btnSendOTPOnAction" style="-fx-background-color: #7f8c8d;" text="Send OTP" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="110.0" layoutY="318.0" onAction="#btnRegisterOnAction" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #7f8c8d;" text="Signup" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" layoutX="136.0" layoutY="249.0" prefHeight="25.0" prefWidth="186.0" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+               </children>
+            </Pane>
+            <JFXButton layoutY="-2.0" onAction="#btnBackOnAction" prefHeight="13.0" prefWidth="85.0" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

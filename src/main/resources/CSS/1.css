@@ -1,0 +1,52 @@
+.pane {
+    -fx-background-color:  white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: white;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header {
+    -fx-border-color: transparent transparent #2979FF transparent;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.text-field {
+    -fx-text-fill: white;
+}
+
+.add-button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+}
+
+.combo-box {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.chart-bar {
+    -fx-bar-fill:  black;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.axis-label, .axis-tick-mark {
+    -fx-text-fill: white;
+}
